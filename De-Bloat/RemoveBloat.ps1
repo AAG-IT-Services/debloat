@@ -1616,6 +1616,10 @@ if ($manufacturer -like "*HP*") {
     ##HP Specific
     $UninstallPrograms = @(
         "Poly Lens"
+		"Poly Camera Pro Compatibility Add-on"
+		"Poly Camera Pro"
+		"Poly Lens Control Service"
+		"Poly Lens Desktop"
         "HP Client Security Manager"
         "HP Notifications"
         "HP Security Update Service"
