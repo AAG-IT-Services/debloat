@@ -1618,6 +1618,7 @@ if ($manufacturer -like "*HP*") {
         "Poly Lens"
 		"Poly Camera Pro Compatibility Add-on"
 		"Poly Camera Pro"
+		"AD2F1837.11510256BE195"
 		"Poly Lens Control Service"
 		"Poly Lens Desktop"
         "HP Client Security Manager"
