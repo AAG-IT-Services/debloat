@@ -2088,7 +2088,7 @@ foreach ($pattern in $uninstallPrograms) {
     $dellSA = Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -like "Dell*Optimizer" } | Select-Object -Property UninstallString
 
     ForEach ($sa in $dellSA) {
-        If ($sa.UninstallString) {
+        If ($sa.UninstallString -and $sa.UninstallString -notmatch "MsiExec") {
             try {
                 cmd.exe /c $sa.UninstallString -silent
             }
