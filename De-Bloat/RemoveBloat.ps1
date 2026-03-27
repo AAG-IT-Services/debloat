@@ -1917,6 +1917,8 @@ if ($manufacturer -like "*Dell*") {
         "Dell Display Manager 2.2"
         "DellInc.PartnerPromo"
         "Dell Trusted Device"
+		"MyDell"
+		"Dell Connected Service Delivery"
     )
 
 
